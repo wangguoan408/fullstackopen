@@ -1,0 +1,33 @@
+GET http://127.0.0.1:3001/api/persons
+
+###
+
+GET http://127.0.0.1:3001/api/persons/65e81d7a4cdf8e964c8581dc
+
+###
+
+GET http://127.0.0.1:3001/info
+
+###
+
+PUT http://127.0.0.1:3001/api/persons/65e81d7a4cdf8e964c8581dc
+Content-Type: application/json
+
+{
+    "name": "lai",
+    "number": "123456"
+}
+
+###
+
+DELETE http://127.0.0.1:3001/api/persons/65e9b17da36e6df0594934f9
+
+###
+
+POST http://127.0.0.1:3001/api/persons
+Content-Type: application/json
+
+{
+    "name": "lai",
+    "number": "234567"
+}

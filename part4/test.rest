@@ -1,0 +1,60 @@
+###
+
+GET http://127.0.0.1:3003/api/blogs
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImxpbiIsImlkIjoiNjVlZGUyYzMwZGNhNDNmNmZjZDhjYzg5IiwiaWF0IjoxNzEwMDg4OTA2fQ.070WVZB_RXr-gljBmRrMHLA33GS3xGX_MfQ9sKEOhiI
+
+###
+POST http://127.0.0.1:3003/api/blogs
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImxpbiIsImlkIjoiNjVlZGUyYzMwZGNhNDNmNmZjZDhjYzg5IiwiaWF0IjoxNzEwMDg4OTA2fQ.070WVZB_RXr-gljBmRrMHLA33GS3xGX_MfQ9sKEOhiI
+
+{
+    "title": "Blog4",
+    "author": "unknown",
+    "url": "a url..."
+}
+
+###
+
+PUT http://127.0.0.1:3003/api/blogs/65eef8d497db5be2b61cc8df
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImxhaSIsImlkIjoiNjVlY2E1NTZkZjc4MGE3NGIxZTU5NmU4IiwiaWF0IjoxNzEwMjEzMjgzfQ.6RYy4cjboQiJBw3COZZ4F8GFKFRHaCv8OUeJm2I7aOA
+
+{
+    "likes": 3
+}
+
+###
+
+DELETE http://127.0.0.1:3003/api/blogs/65efc75f2f3970181689ab5a
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImxhaSIsImlkIjoiNjVlY2E1NTZkZjc4MGE3NGIxZTU5NmU4IiwiaWF0IjoxNzEwMjEzMjgzfQ.6RYy4cjboQiJBw3COZZ4F8GFKFRHaCv8OUeJm2I7aOA
+
+###
+
+GET http://127.0.0.1:3003/api/users
+
+###
+
+POST http://127.0.0.1:3003/api/users
+Content-Type: application/json
+
+{
+    "username": "lin",
+    "name": "Lin",
+    "password": "123456"
+}
+
+###
+
+POST http://127.0.0.1:3003/api/login
+Content-Type: application/json
+
+{
+    "username": "lai",
+    "password": "123456"
+}
+
+###
+
+POST http://127.0.0.1:3003/api/testing/reset

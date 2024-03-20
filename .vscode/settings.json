@@ -1,0 +1,21 @@
+{
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode", // 设置 javascript 的默认格式化工具为 prettier
+    "editor.formatOnSave": true // 保存的时候自动格式化
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode", // 设置 javascript 的默认格式化工具为 prettier
+    "editor.formatOnSave": true // 保存的时候自动格式化
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode", // 设置 javascript 的默认格式化工具为 prettier
+    "editor.formatOnSave": true
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode", // 设置 javascript 的默认格式化工具为 prettier
+    "editor.formatOnSave": true
+  },
+  // prettier 选项配置
+  "prettier.semi": false, // 语句末尾添加分号
+  "prettier.singleQuote": true // 使用单引号
+}
